@@ -1,0 +1,8 @@
+First Name= Bishwagit
+Last Name= Das
+User Name=bishwagitdas
+Email= bishwagitdas0@gmail.com
+Password=040404
+Recovery Email=bishwagitdas@gmail.com
+Gender= Male
+
