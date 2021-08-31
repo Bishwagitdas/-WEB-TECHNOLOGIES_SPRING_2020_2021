@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 400px; 
+}
+
+
+.column.side {
+  width: 15%;
+
+}
+
+
+.column.middle {
+  width: 85%;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="header">
+  <h2>Header</h2>
+</div>
+
+<div class="row">
+  <div class="column side" style="background-color:#aaa;">
+
+   <h5>Navigation</h5>
+   <p>About</p>
+   <p>Contract</p>
+  </div>
+  <div class="column middle" style="background-color:#bbb;"> 
+ <h3>Content</h3>
+ <p>my name is Bishwagit das iam from cse department in aiub</p>
+  </div>
+  
+</div>
+
+<div class="footer">
+  <h4>Footer</h4>
+</div>
+
+</body>
+</html>
